@@ -1,10 +1,9 @@
 #hire_consultant{
-
     .block{
         width: 1000px;
         margin: auto;
         margin-bottom: 100px;
-
+        display: grid;
         &__banner{
             text-align: center;
             padding: 40px 0px 0px 0px;
@@ -98,14 +97,15 @@
                 .input_container{
                     float: left;
                     text-align: left;
-                    margin: 20px 50px;
+                    margin: 10px 50px;
 
                     label{
                         display: block;
-                        font-size: 24px;
-                        line-height: 28px;
-                        color: #121215;
-                        font-family: Gilroy ☞;
+                        font-size: 24px !important;
+                        line-height: 28px !important;
+                        color: #121215 !important;
+                        font-family: Gilroy ☞ !important;
+                        margin-bottom: .5rem !important;
                     }
                     input{
                         width: 400px;
@@ -117,8 +117,8 @@
                     width: 900px;
                     margin: auto;
                     text-align: left;
-                    padding: 20px 0px;
-
+                    padding: 10px 0px;
+                    overflow: auto;
                     p{
                         font-family: Gilroy ☞;
                         font-size: 24px;
@@ -145,8 +145,10 @@
                             }
                             label{
                                 display: inline-flex;
-                                width: 170px;
-                                margin-left: 10px;
+                                width: 170px !important;
+                                margin-left: 10px !important;
+                                font-size: 24px !important;
+                                margin-bottom: .5rem !important;
                             }
                         }
                     }
@@ -203,7 +205,7 @@ $breakpoint-miniphone: 350px;
             &__form{
                 form{
                     .input_container{
-                        margin: 20px 37.5px;
+                        margin: 10px 37.5px;
                         input{
                             width: 350px;
                         }
@@ -213,7 +215,7 @@ $breakpoint-miniphone: 350px;
                         div{
                             div{
                                 label{
-                                    width: 150px;
+                                    width: 150px !important;
                                 }
                             }
                         }
@@ -222,7 +224,7 @@ $breakpoint-miniphone: 350px;
                         }
                     }
                     button{
-                        width: 350px;
+                        width: 350px; 
                     }
                 }
             }
@@ -247,7 +249,7 @@ $breakpoint-miniphone: 350px;
             &__form{
                 form{
                     .input_container{
-                        margin: 20px auto;
+                        margin: 10px auto;
                         float: none;
 
                         input{
@@ -260,7 +262,7 @@ $breakpoint-miniphone: 350px;
                         div{
                             div{
                                 label{
-                                    width: 150px;
+                                    width: 150px !important;
                                 }
                             }
                         }
@@ -332,7 +334,7 @@ $breakpoint-miniphone: 350px;
                             width: 100%;
                         }
                         label{
-                            font-size: 20px;
+                            font-size: 20px !important;
                         }
                     }
                     .select_container{
@@ -341,9 +343,9 @@ $breakpoint-miniphone: 350px;
 
                         div{
                             div{
-                                font-size: 20px;
                                 label{
-                                    width: 170px;
+                                    width: 170px !important;
+                                    font-size: 20px !important;
                                 }
                             }
                         }

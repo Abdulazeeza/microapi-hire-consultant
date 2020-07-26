@@ -1,7 +1,7 @@
 #faq {
 
-  font-family: Gilroy-Bold;
-
+	font-family: Gilroy-Bold;
+	
 	.block{
 		width:100%;
 		display:grid;
@@ -60,58 +60,61 @@
 
 			&--active{
 				background: $secondary-color;
-			  	height: auto;
+				height: auto;
 			}
 		}
 	}
 }
 
+$breakpoint-tablet: 900px;
+$breakpoint-phone: 650px;
 @media (max-width: $breakpoint-tablet) {
-   #faq{
-   		.block{
+	#faq{
+		.block{
 
-   			&__question{
-   				width: 600px;
+			&__question{
+				width: 600px;
 
-   				&__header{
-	  				width: 550px;
-	  			}
+				&__header{
+				width: 550px;
+			}
 
-	  			&__answer{
-	  				width: 500px;
-	  			}
-   			}
-   		}
-   }
+			&__answer{
+				width: 500px;
+			}
+			}
+		}
+	}
 }
 @media (max-width: $breakpoint-phone) {
-  	#faq{
-   		.block{
+	#faq{
+		.block{
 
-   			&__banner{
-  				padding: 20px 0px;
+			&__banner{
+			padding: 20px 0px;
 
-          h1{
-            font-size: 40px;
-            line-height: 70px;
-          }
-  			}
+	h1{
+		font-size: 40px;
+		font-family: bold;
+		line-height: 70px;
+	}
+		}
 
-  			&__mainsection{
-	  			padding: 30px 0px;
-	  		}
+		&__mainsection{
+			padding: 30px 0px;
+		}
 
-   			&__question{
-   				width: 90%;
-   				padding: 10px 5%;
-   				&__header{
-	  				width: 97%;
-	  			}
+			&__question{
+				width: 90%;
+				padding: 10px 5%;
+				&__header{
+				width: 97%;
+			}
 
-	  			&__answer{
-	  				width: 85%;
-	  			}
-   			}
-   		}
-   }
+			&__answer{
+				width: 85%;
+			}
+			}
+		}
+	}
 }
