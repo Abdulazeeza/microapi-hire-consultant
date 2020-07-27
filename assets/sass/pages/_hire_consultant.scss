@@ -1,4 +1,105 @@
 #hire_consultant{
+
+    .hire_consultant{
+        
+        padding: 70px 0px 30px 0px;
+        display: grid;
+        &__navbar{
+            width: 1120px;
+            margin: auto;
+            padding-right: 20px;
+            &__section1{
+                float: left;
+                padding-bottom: 20px;
+                &__img{
+                    width: 60px;
+                    height: 50px;
+                    float: left;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                &__title{
+                    float: right;
+                    margin-left: 20px;
+                    p{
+                        color: #5E5E66;
+                        font-size: 20px;
+                        font-family: Gilroy ☞;
+                    }
+                    h1{
+                        font-family: Gilroy-Bold;
+                        font-size: 36px;
+                        color: #121215;
+                    }
+                }
+            }
+            &__section2{
+                float: right;
+                &__user{
+                    float: left;
+                    margin-right: 20px;
+                    text-align: center;
+                    P{
+                        margin-bottom: 0px;
+                        color: #5E5E66;
+                        font-size: 18px;
+                        font-family: Gilroy ☞;
+                    }
+                }
+                &__rating{
+                    float: right;
+                    padding-left: 20px;
+                    text-align: center;
+                    border-left: 1px solid #ddd;
+                    P{
+                        margin-bottom: 0px;
+                        color: #5E5E66;
+                        font-size: 18px;
+                        font-family: Gilroy ☞;
+                    }
+                    h4 i{
+                        margin-right: 3px;
+                    }
+                }
+            }
+            
+        }
+        &__navlink{
+            border-bottom: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+            padding: 20px 0px;
+            &__container{
+                width: 1120px;
+                padding-right: 20px;
+                margin: auto;
+                &__1{
+                    float: left;
+                    a{
+                        margin-right: 10px;
+                        cursor: pointer;
+                        padding-bottom: 5px;
+                        color: #5E5E66;
+                        font-size: 20px;
+                        font-family: Gilroy ☞;
+                        &:hover{
+                            border-bottom: 2px solid $theme-color;
+                        }
+                    }
+                }
+                &__2{
+                    float: right;
+                    a{
+                        color: #121215;
+                        font-family: Gilroy ☞;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
     .block{
         width: 1000px;
         margin: auto;
@@ -13,6 +114,8 @@
                 font-size: 72px;
                 line-height: 88px;
                 margin-bottom: 30px;
+                font-family: Gilroy;
+                font-style: normal;
             }
             p{
                 font-family: Gilroy-Regular;
@@ -22,7 +125,7 @@
             }
         }
         &__services{
-            padding-bottom: 40px;
+            padding-bottom: 30px;
 
             &__header{
                 padding: 20px 0px;
@@ -33,6 +136,8 @@
                     font-size: 36px;
                     line-height: 44px;
                     margin-bottom: 20px;
+                    font-family: Gilroy;
+                    font-style: normal;
                 }
                 p{
                     font-family: Gilroy-Regular;
@@ -88,11 +193,13 @@
             h4{
                 font-weight: 800;
                 font-size: 36px;
-                line-height: 44px;    
+                line-height: 44px;   
+                font-family: Gilroy;
+                font-style: normal; 
             }
             form{
                 margin: auto;
-                padding: 35px 0px;
+                padding: 20px 0px;
 
                 .input_container{
                     float: left;
@@ -183,7 +290,7 @@
     }
 }
 
-$breakpoint-tablet: 1200px;
+$breakpoint-tablet: 1199px;
 $breakpoint-minitablet: 900px;
 $breakpoint-phone: 650px;
 $breakpoint-miniphone: 350px;
@@ -191,6 +298,17 @@ $breakpoint-miniphone: 350px;
 @media (max-width: $breakpoint-tablet) {
     #hire_consultant{
         
+        .hire_consultant{
+            &__navbar{
+                width: 960px;
+            }
+            &__navlink{
+                &__container{
+                    width: 960px;
+                }
+            }
+        }
+
         .block{
             width: 850px;
 
@@ -226,6 +344,20 @@ $breakpoint-miniphone: 350px;
                     button{
                         width: 350px; 
                     }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 992px){
+    #hire_consultant{
+        .hire_consultant{
+            &__navbar{
+                width: 720px;
+            }
+            &__navlink{
+                &__container{
+                    width: 720px;
                 }
             }
         }
