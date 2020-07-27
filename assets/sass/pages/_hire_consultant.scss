@@ -397,6 +397,11 @@ $breakpoint-miniphone: 350px;
                         background: #ddd;
                         margin: 10px;
                         display: inline-block;
+                        &:hover{
+                            background: #000;
+                            color: $secondary-color;
+                            border: none;
+                        }
                      }
                    }
                    &__2{
@@ -491,6 +496,7 @@ $breakpoint-miniphone: 350px;
             margin-bottom: 70px;
 
             &__banner{
+                padding: 0px;
                 h1{
                     font-size: 50px;
                     line-height: 60px;
@@ -501,6 +507,7 @@ $breakpoint-miniphone: 350px;
             }
             &__services{
                 &__header{
+                    padding: 20px 0px 0px 0px;
                     h4{
                         font-size: 32px;
                     }
