@@ -12,7 +12,7 @@
                 float: left;
                 padding-bottom: 20px;
                 &__img{
-                    width: 60px;
+                    width: 50px;
                     height: 50px;
                     float: left;
                     img{
@@ -363,6 +363,56 @@ $breakpoint-miniphone: 350px;
         }
     }
 }
+@media(max-width: 768px){
+    #hire_consultant{
+        .hire_consultant{
+            &__navbar{
+                width: 100%;
+                padding-right: 0px;
+                display: grid;
+                padding-bottom: 20px;
+                &__section1{
+                    width: 370px;
+                    float: none;
+                    margin: auto;
+                }
+                &__section2{
+                    width: 155px;
+                    float: none;
+                    margin: auto;
+                }
+            }
+            &__navlink{
+                padding: 0px;
+                &__container{
+                   padding-right: 0px;
+                   margin: 0px;
+                   width: 100%;
+                   &__1{
+                     float: none;
+                     padding: 20px 0px;
+                     text-align: center;
+                     a{
+                        padding: 15px 20px;
+                        background: #ddd;
+                        margin: 10px;
+                        display: inline-block;
+                     }
+                   }
+                   &__2{
+                    float: none;
+                    text-align: center;
+                    padding: 20px 0;
+                    border-top: 1px solid #ddd;
+                    a{
+                        
+                    }
+                   }
+                }
+            }
+        }
+    }
+}
 @media (max-width: $breakpoint-minitablet) {
     #hire_consultant{
         
@@ -415,6 +465,26 @@ $breakpoint-miniphone: 350px;
 }
 @media (max-width: $breakpoint-phone) {
     #hire_consultant{
+
+        .hire_consultant{
+            &__navbar{
+                &__section1{
+                    width: 270px;
+                &__img{
+                    width: 40px;
+                    height: 40px;
+                }
+                &__title{
+                        p{
+                            font-size: 17px;
+                        }
+                        h1{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
 
         .block{
             width: 90%;

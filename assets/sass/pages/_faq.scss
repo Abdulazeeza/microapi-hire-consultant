@@ -18,11 +18,12 @@
 				line-height: 84px;
 				color: $primary-color;
 				overflow: hidden;
+				font-family: Gilroy-Bold;
 			}
 		}
 		&__mainsection{
 			background: $tetiary-color;
-			padding: 50px 0px;
+			padding: 30px 0px;
 		}
 		&__question{
 			width: 750px;
@@ -39,7 +40,7 @@
 				font-size: 18px;
 				line-height: 60px;
 				font-weight: 600;
-
+				font-family: Gilroy ☞;
 				&__btn{
 					float: right;
 					transition: 1s ease;
@@ -56,6 +57,8 @@
 				color: #6C6C6C;
 				line-height: 22px;
 				font-size: 14px;
+				font-size: 16px;
+    			font-family: Gilroy ☞;
 			}
 
 			&--active{
